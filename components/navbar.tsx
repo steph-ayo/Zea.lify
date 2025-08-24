@@ -49,21 +49,30 @@ const Navbar = () => {
 
         {/* NAV BURGER ICON */}
         <div className="flex md:hidden">
-          (isDropDownVisible ?(
-          {/* Display an x when dropdown is visible */}
-          <div
-            onClick={toggleDropDown}
-            className="w-8 h-8 text-slate-300 cursor-pointer"
-          >
-            <X />
-            <DropDownMenu onClose={closeDropDown} />
-          </div>
+          {isDropDownVisible ? (
+            <div
+              onClick={toggleDropDown}
+              className="w-8 h-8 text-slate-300 cursor-pointer"
+            >
+              {/* Display an x when dropdown is visible */}
+              <X />
+              <DropDownMenu onClose={closeDropDown} />
+            </div>
           ) : (
-          <AlignJustify
-            onClick={toggleDropDown}
-            className="w-8 h-8 text-slate-300 cursor-pointer"
-          />
-          ) )
+            <AlignJustify
+              onClick={toggleDropDown}
+              className="w-8 h-8 text-slate-300 cursor-pointer"
+            />
+          )}
+        </div>
+
+        <div className="hidden md:flex">
+          <Link
+            href="/contact"
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </div>
