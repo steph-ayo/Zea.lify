@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 import Image from "next/image";
+import SliderOne from "@/components/ui/slider";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
         >
           Book a call
         </Link>
+
+        <div className="w-full pt-20">
+          <SliderOne />
+        </div>
       </div>
     </div>
   );
