@@ -34,10 +34,10 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/business.jpeg"
+              src="/images/logo.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               className="
                   rounded-2xl
                       "
@@ -49,10 +49,10 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/coffe.jpeg"
+              src="/images/logo.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               className="
                   rounded-2xl 
                       "
@@ -64,10 +64,10 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/small-business-3.webp"
+              src="/images/logo.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               className="
                   rounded-2xl 
                       "
@@ -79,10 +79,10 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/man.jpeg"
+              src="/images/logo.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               className="
                   rounded-2xl 
                       "
@@ -94,10 +94,10 @@ const SliderOne = () => {
           <div className="rounded-md px-2 md:p-10">
             <Image
               priority
-              src="/images/image-business.jpeg"
+              src="/images/logo.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={300}
               className="
                   rounded-2xl 
                       "
