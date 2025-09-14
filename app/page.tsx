@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/navbar";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
@@ -9,8 +11,40 @@ import ShopifyStores from "./shopify-stores";
 import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
+import { useRef } from "react";
 
 export default function Home() {
+  const websiteDesignRef = useRef<HTMLDivElement>(null);
+  const graphicDesignRef = useRef<HTMLDivElement>(null);
+  const shopifyStoreRef = useRef<HTMLDivElement>(null);
+  const brandsRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+
+  const scrollToWebsiteDesign = () => {
+    websiteDesignRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
+  const scrollToGraphicDesign = () => {
+    graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToShopifyStores = () => {
+    shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToBrands = () => {
+    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  // Function to scroll to Services section
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-full  md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Navbar />
