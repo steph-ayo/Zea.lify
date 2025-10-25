@@ -2,65 +2,54 @@
 
 import Image from "next/image";
 
-const stores = [
+const reviews = [
   {
-    image: "/images/logo.png",
-    quote: "Bird showed us to get started, what to do, and how to do it.",
-    name: "Jason Scer",
+    image: "/images/review1.png",
+    quote:
+      "Zea.lify brought our brand vision to life — the hoodies came out exactly how we imagined. Quality and detail on point.",
+    name: "Tunde A.",
   },
   {
-    image: "/images/logo.png",
+    image: "/images/review2.png",
     quote:
-      "We had no idea how to get started, but Bird showed us the way. And we were able to create something amazing.",
-    name: "John Prency",
+      "The design team understood our vibe from day one. From logo to merch, everything screams our identity.",
+    name: "Sarah M.",
   },
-
   {
-    image: "/images/logo.png",
+    image: "/images/review3.png",
     quote:
-      "The team at Bird is amazing. They helped us create a stunning store that we are proud of.",
-    name: "Miguel Martinez",
+      "Our staff uniforms turned out insane. Clean prints, premium fabric, fast delivery — Zea.lify really doesn’t miss.",
+    name: "Lex Studios",
   },
 ];
 
 const ShopifyStores = () => {
   return (
-    <section
-      className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
-    rounded-3xl
-  
-  "
-    >
-      <div className=" p-4   mx-auto relative z-10  w-full ">
-        <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-          Shopify Stores <br />
+    <section className="mt-10 md:py-16 bg-black text-white w-full rounded-3xl">
+      <div className="p-6 md:p-10 mx-auto max-w-5xl relative z-10">
+        {/* Title */}
+        <div className="text-3xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
+          What Our Clients Say
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+        <p className="mt-3 text-neutral-400 text-center max-w-md mx-auto">
+          Real experiences from brands, teams, and creators who trusted Zea.lify
+          with their vision.
         </p>
-        <div className="md:flex items-center justify-center  px-10 gap-4">
-          {stores.map((store, index) => (
+
+        {/* Reviews */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          {reviews.map((review, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mt-10 md:w-2/3 mx-auto"
+              className="bg-zinc-800 border border-zinc-800 rounded-2xl p-6 flex flex-col items-center justify-center text-center hover:border-white/20 transition-all"
             >
-              <div className="flex flex-col items-center justify-center ">
-                <Image
-                  src={store.image}
-                  alt="shopify store"
-                  width={400}
-                  height={400}
-                  className="rounded-lg mx-auto"
-                />
-                <p className="text-neutral-800 font-bold text-lg mt-4 text-center ">
-                  &quot;{store.quote}&quot;
-                </p>
-                <p className="text-neutral-800 font-bold text-lg mt-4">
-                  {" "}
-                  - {store.name}
-                </p>
-              </div>
+              <p className="text-neutral-200 italic leading-relaxed">
+                “{review.quote}”
+              </p>
+              <p className="text-neutral-400 font-semibold mt-4">
+                — {review.name}
+              </p>
             </div>
           ))}
         </div>

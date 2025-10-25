@@ -30,80 +30,96 @@ const SliderOne = () => {
   return (
     <div>
       <Slider {...settings}>
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="logo"
-              width={400}
-              height={300}
-              className="
-                  rounded-2xl
-                      "
-            />
-          </div>
-        </>
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model2.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
+                  rounded-2xl 
+                      object-contain"
+          />
+        </div>
 
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="logo"
-              width={400}
-              height={300}
-              className="
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model8.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
+                  rounded-2xl 
+                      object-contain"
+          />
+        </div>
+
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model5.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
+                  rounded-2xl 
+                      object-contain"
+          />
+        </div>
+
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model7.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
                   rounded-2xl 
                       "
-            />
-          </div>
-        </>
+          />
+        </div>
 
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="logo"
-              width={400}
-              height={300}
-              className="
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model1.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
                   rounded-2xl 
                       "
-            />
-          </div>
-        </>
+          />
+        </div>
 
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="logo"
-              width={400}
-              height={300}
-              className="
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model3.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
                   rounded-2xl 
                       "
-            />
-          </div>
-        </>
+          />
+        </div>
 
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="logo"
-              width={400}
-              height={300}
-              className="
+        <div className="rounded-md px-2 md:p-10">
+          <Image
+            priority
+            src="/images/model4.png"
+            alt="logo"
+            width={400}
+            height={300}
+            className="
                   rounded-2xl 
                       "
-            />
-          </div>
-        </>
+          />
+        </div>
       </Slider>
     </div>
   );

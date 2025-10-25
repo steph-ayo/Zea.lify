@@ -41,7 +41,7 @@ const Navbar = ({
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo/logo.png"
+              src="/logo/zea.lify.jpeg"
               alt="logo"
               width={100}
               height={100}
@@ -51,20 +51,17 @@ const Navbar = ({
         </div>
         {/* NAV LINKS */}
         <div className="cursor-pointer hidden md:flex space-x-10 items-center text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
+          <div>
+            <Link href="/">Home</Link>
+          </div>
           <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website design
+            Shop
           </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic design
-          </div>
-          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
-            Shopify Stores
-          </div>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
+          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+            Custom Branding
           </div>
 
-          <Link href="/pricing" className="hover:text-gray-50">
+          <Link href="/" className="hover:text-gray-50">
             Pricing
           </Link>
         </div>

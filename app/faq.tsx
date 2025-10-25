@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -7,46 +9,61 @@ import {
 
 const FAQS = () => {
   return (
-    <div
-      className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
-        rounded-3xl
-        
-        "
-    >
-      <div className=" p-10 md:p-4 md:px-20">
-        <div className="text-3xl md:text-7xl font-bold text-black">
-          Have questions ?
+    <div className="mt-5 py-14 bg-[#f6f5f4] w-full rounded-t-3xl">
+      <div className="px-6 md:px-16">
+        {/* Headings */}
+        <div className="text-2xl md:text-4xl font-semibold text-black text-center">
+          Have questions?
         </div>
-        <div className="  font-semibold text-3xl md:text-6xl text-gradient bg-gradient-to-r from-emerald-600 to-blue-300 bg-clip-text text-transparent">
+        <div className="text-xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-sky-400 bg-clip-text text-transparent text-center mb-10">
           Get answers.
         </div>
-        <Accordion type="single" collapsible>
+
+        {/* Accordion */}
+        <Accordion type="single" collapsible className="space-y-3">
           <AccordionItem value="item-1">
-            <AccordionTrigger>What is Bird?</AccordionTrigger>
+            <AccordionTrigger>What is Zea.lify?</AccordionTrigger>
             <AccordionContent>
-              Bird is a full fledge marketing agency that specializes in
-              branding, web design, and digital marketing.
+              Zea.lify is a creative clothing and branding studio that designs
+              and produces custom and ready-made apparel for creators, teams,
+              and brands.
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="item-2">
-            <AccordionTrigger>How to start ?</AccordionTrigger>
+            <AccordionTrigger>Can I order custom designs?</AccordionTrigger>
             <AccordionContent>
-              You can start by contacting us. We will get back to you within 24
-              hours.
+              Absolutely. You can personalize tees, hoodies, caps, and more with
+              your logo, design, or message — perfect for personal use or brand
+              promotion.
             </AccordionContent>
           </AccordionItem>
+
           <AccordionItem value="item-3">
-            <AccordionTrigger>Pricing ?</AccordionTrigger>
+            <AccordionTrigger>How does the process work?</AccordionTrigger>
             <AccordionContent>
-              We offer custom tailored solutions for your business. Contact us
-              to get a quote.
+              Fill out our contact form or send us a message. Once your design
+              and details are confirmed, we begin production and keep you
+              updated every step.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-4">
-            <AccordionTrigger>Support ?</AccordionTrigger>
+            <AccordionTrigger>
+              Do you take bulk or business orders?
+            </AccordionTrigger>
             <AccordionContent>
-              We offer Monday-Friday support for all our clients.
+              Yes. We specialize in bulk and branded orders for companies,
+              events, and teams — with flexible pricing and top-quality
+              materials.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-5">
+            <AccordionTrigger>How long will my order take?</AccordionTrigger>
+            <AccordionContent>
+              Standard orders take around 5–10 business days. Custom or bulk
+              projects may take longer, depending on your design and quantity.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -54,4 +71,5 @@ const FAQS = () => {
     </div>
   );
 };
+
 export default FAQS;
