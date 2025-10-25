@@ -24,7 +24,7 @@ const Hero = ({ scrollToCustomBranding }: HeroProps) => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 z-0" />
+      <div className="absolute inset-0 bg-black/20 z-0" />
 
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center text-center px-6">
