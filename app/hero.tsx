@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
-const Hero = () => {
+interface HeroProps {
+  scrollToCustomBranding: () => void;
+}
+
+const Hero = ({ scrollToCustomBranding }: HeroProps) => {
   return (
     <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Background Video */}
@@ -22,9 +26,9 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/90 z-0" />
 
-      {/* Content */}
+      {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center text-center px-6">
-        {/* Headline */}
+        {/* Hero header text */}
         <motion.h1
           className="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400"
           initial={{ opacity: 0, y: 30 }}
@@ -34,7 +38,7 @@ const Hero = () => {
           Wear Your Zeal.
         </motion.h1>
 
-        {/* Subtitle */}
+        {/* Hero Subtitle text */}
         <motion.p
           className="mt-4 text-lg text-neutral-300 max-w-xl"
           initial={{ opacity: 0, y: 20 }}
@@ -63,20 +67,20 @@ const Hero = () => {
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
-              href="/shop"
-              className="cursor-pointer flex justify-center items-center border-2 border-white rounded-full w-48 p-3 text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
+              href="/contact"
+              className="cursor-pointer flex justify-center items-center border-2 border-white/50 rounded-full w-48 p-3 text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
             >
               Shop Ready-Made
             </Link>
           </motion.div>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Link
-              href="/custom-branding"
-              className="cursor-pointer flex justify-center items-center border-2 border-white rounded-full w-48 p-3 text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
+            <button
+              onClick={scrollToCustomBranding}
+              className="cursor-pointer flex justify-center items-center border-2 border-white/50 rounded-full w-48 p-3 text-white font-medium hover:bg-white hover:text-black transition-all duration-300"
             >
               Customize Yours
-            </Link>
+            </button>
           </motion.div>
         </motion.div>
 

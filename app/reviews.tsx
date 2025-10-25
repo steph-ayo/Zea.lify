@@ -23,7 +23,7 @@ const reviews = [
   },
 ];
 
-const ShopifyStores = () => {
+const Reviews = () => {
   return (
     <section className="mt-10 md:py-16 bg-black text-white w-full rounded-3xl">
       <div className="p-6 md:p-10 mx-auto max-w-5xl relative z-10">
@@ -58,4 +58,4 @@ const ShopifyStores = () => {
   );
 };
 
-export default ShopifyStores;
+export default Reviews;

@@ -27,99 +27,32 @@ const SliderOne = () => {
     settings.slidesToShow = 1;
   }
 
+  const images = [
+    "/images/model2.png",
+    "/images/model8.png",
+    "/images/model5.png",
+    "/images/model7.png",
+    "/images/model1.png",
+    "/images/model3.png",
+    "/images/model4.png",
+  ];
+
   return (
     <div>
       <Slider {...settings}>
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model2.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      object-contain"
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model8.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      object-contain"
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model5.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      object-contain"
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model7.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      "
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model1.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      "
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model3.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      "
-          />
-        </div>
-
-        <div className="rounded-md px-2 md:p-10">
-          <Image
-            priority
-            src="/images/model4.png"
-            alt="logo"
-            width={400}
-            height={300}
-            className="
-                  rounded-2xl 
-                      "
-          />
-        </div>
+        {images.map((src, index) => (
+          <div key={index} className="rounded-md px-2 md:p-10">
+            <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-2xl">
+              <Image
+                priority
+                src={src}
+                alt={`model-${index}`}
+                fill
+                className="object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );

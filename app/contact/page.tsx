@@ -60,11 +60,7 @@ export default function ContactForm() {
       <div className="min-h-screen bg-black text-white relative overflow-hidden">
         {/* ✅ Navbar works fully (links to homepage sections) */}
         <Navbar
-          scrollToWebsiteDesign={() => (window.location.href = "/#website")}
-          scrollToGraphicDesign={() => (window.location.href = "/#graphics")}
-          scrollToShopifyStores={() => (window.location.href = "/#shopify")}
-          scrollToBrands={() => (window.location.href = "/#brands")}
-          scrollToServices={() => (window.location.href = "/#services")}
+          scrollToCustomBranding={() => (window.location.href = "/#website")}
         />
 
         {/* Hero Section */}

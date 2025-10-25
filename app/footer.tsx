@@ -8,12 +8,6 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="relative bg-black/95 border-t border-neutral-800 text-neutral-400 py-16 px-6 md:px-20 overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute inset-0">
-        <div className="absolute w-[400px] h-[400px] bg-blue-600/10 blur-[120px] top-0 left-0" />
-        <div className="absolute w-[400px] h-[400px] bg-purple-600/10 blur-[120px] bottom-0 right-0" />
-      </div>
-
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
         {/* Left: Brand */}
         <div className="flex flex-col items-start gap-4">
