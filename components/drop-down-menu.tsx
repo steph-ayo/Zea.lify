@@ -25,11 +25,11 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
         <Link href="/contact" className="text-black text-2xl">
           Shop
         </Link>
-        {/* 👇 scroll instead of navigating */}
+
         <button
           onClick={() => {
             scrollToCustomBranding();
-            onClose(); // closes menu after clicking
+            onClose();
           }}
           className="text-black text-2xl text-left"
         >
