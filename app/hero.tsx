@@ -86,7 +86,7 @@ const Hero = ({ scrollToCustomBranding }: HeroProps) => {
 
         {/* Floating Social Icons */}
         <motion.div
-          className="flex gap-8 justify-center mt-16"
+          className="flex gap-6 justify-center mt-16"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
@@ -96,10 +96,11 @@ const Hero = ({ scrollToCustomBranding }: HeroProps) => {
             href="https://wa.me/2348065893230"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] p-3 rounded-full hover:shadow-[0_0_25px_rgba(37,211,102,0.6)] transition-all duration-300"
-            whileHover={{ scale: 1.2 }}
+            className="relative bg-white/5 backdrop-blur-sm border border-white/10 p-4 rounded-full hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300 group"
+            whileHover={{ scale: 1.1, y: -5 }}
           >
-            <MessageCircle size={26} className="text-white" />
+            <MessageCircle size={22} className="text-white" />
+            <div className="absolute inset-0 rounded-full bg-[#25D366]/0 group-hover:bg-[#25D366]/20 blur-xl transition-all duration-300" />
           </motion.a>
 
           {/* Instagram */}
@@ -107,10 +108,11 @@ const Hero = ({ scrollToCustomBranding }: HeroProps) => {
             href="https://www.instagram.com/zea.lify/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 hover:shadow-[0_0_25px_rgba(255,100,100,0.6)] transition-all duration-300"
-            whileHover={{ scale: 1.2 }}
+            className="relative bg-white/5 backdrop-blur-sm border border-white/10 p-4 rounded-full hover:border-transparent transition-all duration-300 group hover:bg-gradient-to-tr hover:from-pink-500 hover:via-red-500 hover:to-yellow-500"
+            whileHover={{ scale: 1.1, y: -5 }}
           >
-            <Instagram size={26} className="text-white" />
+            <Instagram size={22} className="text-white" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-500/0 via-red-500/0 to-yellow-500/0 group-hover:from-pink-500/20 group-hover:via-red-500/20 group-hover:to-yellow-500/20 blur-xl transition-all duration-300" />
           </motion.a>
 
           {/* Facebook */}
@@ -118,10 +120,11 @@ const Hero = ({ scrollToCustomBranding }: HeroProps) => {
             href="https://web.facebook.com/p/Zealify-61579608185347/?_rdc=1&_rdr"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#1877F2] p-3 rounded-full hover:shadow-[0_0_25px_rgba(24,119,242,0.6)] transition-all duration-300"
-            whileHover={{ scale: 1.2 }}
+            className="relative bg-white/5 backdrop-blur-sm border border-white/10 p-4 rounded-full hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300 group"
+            whileHover={{ scale: 1.1, y: -5 }}
           >
-            <Facebook size={26} className="text-white" />
+            <Facebook size={22} className="text-white" />
+            <div className="absolute inset-0 rounded-full bg-[#1877F2]/0 group-hover:bg-[#1877F2]/20 blur-xl transition-all duration-300" />
           </motion.a>
         </motion.div>
       </div>
