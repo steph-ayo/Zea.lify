@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const reviews = [
   {
     image: "/images/review1.png",
